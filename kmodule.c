@@ -4,8 +4,10 @@
 #include <linux/module.h>
 #include <linux/init.h>
 
+
+#include "data.h"
 int module_load(void) {
-    printk("Module loaded\n");
+    printk(load_text);
     return 0;
 }
 
