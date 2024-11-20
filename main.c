@@ -5,7 +5,7 @@
 #include <linux/init.h>
 
 int module_load(void) {
-    kprint("Module loaded\n");
+    printk("Module loaded\n");
     return 0;
 }
 
