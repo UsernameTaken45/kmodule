@@ -1,0 +1,3 @@
+/home/xander/projects/kmodule/test_program/CMakeFiles/main.dir
+/home/xander/projects/kmodule/test_program/CMakeFiles/edit_cache.dir
+/home/xander/projects/kmodule/test_program/CMakeFiles/rebuild_cache.dir
