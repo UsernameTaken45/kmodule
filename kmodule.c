@@ -19,7 +19,7 @@ static int file_close(struct inode* device_file, struct file* instance){
     return 0;
 }
 
-static struct file_operations fops = {
+const static struct file_operations fops = {
         .owner = THIS_MODULE,
         .open = file_open,
         .release = file_close
@@ -29,7 +29,7 @@ static struct file_operations fops = {
 static int module_load(void) {
 
     int ret;
-    ret = register_chrdev(90, "kmodule", fops);
+    ret = register_chrdev(90, "kmodule", &fops);
     if (ret == 0){
         printk(load_text);
     } else if (ret > 0){
